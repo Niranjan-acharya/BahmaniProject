@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="121.245">
+    <testcase classname="BAHMNI EMR FOR CLINICS New Patient Page" name="Verify New Patient page" time="35.842">
+        <system-out><![CDATA[Given user on BAHMNI welcome page...........................................passed
+When user clicks Clinical Service option....................................passed
+And user enters username "superman".........................................passed
+And user enters password "Admin123".........................................passed
+And user selects location "Bahmni Clinic"...................................passed
+When user clicks on Login...................................................passed
+When user clicks Registration option........................................passed
+When user clicks Create New option..........................................passed
+And user enters firstname "Sayeed"..........................................passed
+And user enters lastname "khan".............................................passed
+And user selects gender "Male"..............................................passed
+And user selects birthdate "15-06-1996".....................................passed
+When user clicks on Save....................................................passed
+Then page should create patinet Id..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="BAHMNI EMR FOR CLINICS" name="Verify Welcome page" time="13.52">
+        <system-out><![CDATA[Given user on BAHMNI welcome page...........................................passed
+When user gets the title of the page........................................passed
+Then page title should be "Bahmni"..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="BAHMNI EMR FOR CLINICS" name="Click on Clinical Service in welcome page" time="17.549">
+        <system-out><![CDATA[Given user on BAHMNI welcome page...........................................passed
+And user finds "Clinical Service" option....................................passed
+When user clicks Clinical Service option....................................passed
+Then page should navigate to Login Page.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="BAHMNI EMR FOR CLINICS Dashboard Page" name="Verify Dashboard page" time="30.75">
+        <system-out><![CDATA[Given user on BAHMNI welcome page...........................................passed
+When user clicks Clinical Service option....................................passed
+And user enters username "superman".........................................passed
+And user enters password "Admin123".........................................passed
+And user selects location "Bahmni Clinic"...................................passed
+When user clicks on Login...................................................passed
+Given user on BAHMNI Dashboard page.........................................passed
+And user finds "Registration" option2.......................................passed
+When user clicks Registration option........................................passed
+Then page should navigate to "search" Page2.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="BAHMNI EMR FOR CLINICS Login Page" name="Verify Login page" time="22.608">
+        <system-out><![CDATA[Given user on BAHMNI welcome page...........................................passed
+And user finds "Clinical Service" option....................................passed
+When user clicks Clinical Service option....................................passed
+Then page should navigate to Login Page.....................................passed
+Given user on BAHMNI login page.............................................passed
+And user enters username "superman".........................................passed
+And user enters password "Admin123".........................................passed
+And user selects location "Bahmni Clinic"...................................passed
+When user clicks on Login...................................................passed
+Then page should navigate to "dashboard" Page...............................passed
+]]></system-out>
+    </testcase>
+</testsuite>
